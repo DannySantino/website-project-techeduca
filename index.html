@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,13 +19,13 @@
         <div class="navigation">
             <ul>
                 <i class="fas fa-times" id="menu-close"></i>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
-            <img src="images/menu.png" id="menu-btn" alt="">
+            <img src="images/menu.png" id="menu-btn" alt="hamburger menu button">
         </div>
     </nav>
 
@@ -88,7 +90,7 @@
                 <img src="images/c5.jpg" alt="apple desktop computer screens">
                 <div class="details">
                     <span>Updated 23/01/21</span>
-                    <h6>Web Development Complete Course</h6>
+                    <h6>Web Development Full Course</h6>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -184,8 +186,8 @@
 
     <section id="registration">
         <div class="reminder">
-            <p>Get 1 Course for free after you Register</p>
-            <h1>Register Now to Get It</h1>
+            <p>Get 1 Course for free after you register</p>
+            <h1>Register to Get It</h1>
             <div class="time">
                 <div class="date">
                     16 <br> Days
@@ -194,10 +196,10 @@
                     21 <br> Hours
                 </div>
                 <div class="date">
-                    11 <br> Minutes
+                    11 <br> Mins
                 </div>
                 <div class="date">
-                    53 <br> Seconds
+                    53 <br> Secs
                 </div>
             </div>
         </div>
@@ -218,7 +220,7 @@
         <div class="expert-box">
 
             <div class="profile">
-                <img src="images/pro4.webp" alt="caucasian woman with glasses on">
+                <img src="images/pro4.webp" alt="middle-aged woman with glasses on">
                 <h6>Elma Watkins</h6>
                 <p>Angular JS Expert</p>
                 <div class="pro-links">
@@ -229,7 +231,7 @@
             </div>
 
             <div class="profile">
-                <img src="images/pro2.webp" alt="">
+                <img src="images/pro2.webp" alt="dark-haired man with a smile on">
                 <h6>Kenan Yu</h6>
                 <p>JavaScript Instructor</p>
                 <div class="pro-links">
@@ -240,7 +242,7 @@
             </div>
 
             <div class="profile">
-                <img src="images/pro3.webp" alt="">
+                <img src="images/pro3.webp" alt="man with a beard">
                 <h6>Scott Adler</h6>
                 <p>Data Analyst</p>
                 <div class="pro-links">
@@ -251,7 +253,7 @@
             </div>
 
             <div class="profile">
-                <img src="images/pro1.webp" alt="">
+                <img src="images/pro1.webp" alt="woman with a smile on">
                 <h6>Amy Summers</h6>
                 <p>Python Instructor</p>
                 <div class="pro-links">
@@ -269,7 +271,7 @@
         <div class="footer-col">
             <h3>Top Products</h3>
             <ul>
-                <li>Course Management</li>
+                <li>Course Mgt.</li>
                 <li>Consultancy</li>
                 <li>Study Tools</li>
                 <li>Marketing Services</li>
@@ -280,19 +282,19 @@
             <h3>Features</h3>
             <ul>
                 <li>Study Forums</li>
-                <li>Consultancy Roles</li>
-                <li>Study Tools</li>
-                <li>Marketing Services</li>
+                <li>Instructors</li>
+                <li>Campus Guides</li>
+                <li>Hackathon</li>
             </ul>
         </div>
 
         <div class="footer-col">
             <h3>Resources</h3>
             <ul>
-                <li>Website Management</li>
-                <li>Consultancy Roles</li>
+                <li>Website Mgt.</li>
+                <li>Cloud</li>
                 <li>Study Tools</li>
-                <li>Marketing Services</li>
+                <li>Downloads</li>
             </ul>
         </div>
 
@@ -328,7 +330,7 @@
 
     <script>
         $('#menu-btn').click(() => {
-            $('nav .navigation ul').add('active');
+            $('nav .navigation ul').addClass('active');
         });
         $('#menu-close').click(() => {
             $('nav .navigation ul').removeClass('active');
