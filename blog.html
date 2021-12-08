@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Educa</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo.svg" alt="tech-educa-logo-svg">
+        <div class="navigation">
+            <ul>
+                <i class="fas fa-times" id="menu-close"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+            <img src="images/menu.png" id="menu-btn" alt="hamburger menu button">
+        </div>
+    </nav>
+
+    <section id="about-home">
+        <h2>Blog /</h2>
+    </section>
+
+    <section id="blog-container">
+
+        <div class="blogs">
+            <div class="post">
+                <img src="images/b3.jpg" alt="macbook with colorful keyboard light effect">
+                <h3>How the Latest OS Update Affects Your Macbook</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima dolorem facilis deleniti
+                    tenetur provident, aspernatur, rem explicabo accusamus minus, asperiores odit numquam velit iure
+                    aperiam officia. Facere, nobis illum.</p>
+                <a href="post.html">Read More</a>
+            </div>
+            <div class="post">
+                <img src="images/b2.jpg" alt="smartphone showing the words eat sleep code repeat">
+                <h3>Nine Healthy Coding Habits You Should Practice</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima dolorem facilis deleniti
+                    tenetur provident, aspernatur, rem explicabo accusamus minus, asperiores odit numquam velit iure
+                    aperiam officia. Facere, nobis illum.</p>
+                <a href="post.html">Read More</a>
+            </div>
+            <div class="post">
+                <img src="images/b1.jpg" alt="computer with half of the screen showing a css stylesheet">
+                <h3>Ethical Hacking: Where is the Line?</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima dolorem facilis deleniti
+                    tenetur provident, aspernatur, rem explicabo accusamus minus, asperiores odit numquam velit iure
+                    aperiam officia. Facere, nobis illum.</p>
+                <a href="post.html">Read More</a>
+            </div>
+            <div class="post">
+                <img src="images/b4.png" alt="macbook screenshot of a code editor with javascript code">
+                <h3>Learn Web Development in the Easiest Way</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minima dolorem facilis deleniti
+                    tenetur provident, aspernatur, rem explicabo accusamus minus, asperiores odit numquam velit iure
+                    aperiam officia. Facere, nobis illum.</p>
+                <a href="post.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#">Web Development</a>
+            <hr>
+            <a href="#">Web Design</a>
+            <hr>
+            <a href="#">JavaScript Programming</a>
+            <hr>
+            <a href="#">Python Programming</a>
+            <hr>
+            <a href="#">Frontend Web Development</a>
+            <hr>
+            <a href="#">Backend Web Development</a>
+            <hr>
+            <a href="#">Mobile Apps</a>
+            <hr>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <ul>
+                <li>Course Mgt.</li>
+                <li>Consultancy</li>
+                <li>Study Tools</li>
+                <li>Marketing Services</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Features</h3>
+            <ul>
+                <li>Study Forums</li>
+                <li>Instructors</li>
+                <li>Campus Guides</li>
+                <li>Hackathon</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+                <li>Website Mgt.</li>
+                <li>Cloud</li>
+                <li>Study Tools</li>
+                <li>Downloads</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Community</li>
+                <li>Careers</li>
+                <li>Programs</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Enter your email below to signup for our newsletter</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Enter email" name="" id="">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2021 | Danny Santino</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        $('#menu-btn').click(() => {
+            $('nav .navigation ul').addClass('active');
+        });
+        $('#menu-close').click(() => {
+            $('nav .navigation ul').removeClass('active');
+        });
+    </script>
+
+</body>
+
+</html>

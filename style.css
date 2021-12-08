@@ -448,7 +448,7 @@ footer .copyright .pro-links i:hover {
     color: #2C2C2C;
 }
 
-/* about */
+/* about page*/
 
 #about-home {
     width: 100%;
@@ -539,6 +539,74 @@ footer .copyright .pro-links i:hover {
     height: auto;
 }
 
+/* blog page */
+
+#blog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+
+#blog-container .blogs {
+    width: 60%;
+}
+
+#blog-container .blogs img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#blog-container .blogs .post {
+    padding-bottom: 60px;
+}
+
+#blog-container .blogs .post h3 {
+    color: #29303B;
+    padding: 15px 0 10px 0;
+}
+
+#blog-container .blogs .post p {
+    color: #757373;
+    padding-bottom: 20px;
+}
+
+#blog-container .blogs .post a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(21, 21, 100);
+}
+
+#blog-container .cate {
+    width: 30%;
+}
+
+#blog-container .cate h2 {
+    padding-bottom: 7px;
+}
+
+#blog-container .cate a {
+    text-decoration: none;
+    color: #757373;
+    font-weight: 500;
+    line-height: 65px;
+}
+
+/* full blogpost */
+
+#blog-container .blogpost {
+    margin: 0 auto;
+}
+
+#blog-container .blogpost p {
+    text-align: justify;
+    padding-bottom: 60px !important;
+}
+
 /* media queries */
 
 @media (min-width: 1602px) {
@@ -548,6 +616,13 @@ footer .copyright .pro-links i:hover {
     }
     #course .courses .cost {
         bottom: 130px;
+    }
+}
+
+@media (max-width: 1025px) {
+    #blog-container .blogpost {
+        width: 100%;
+        margin-top: 50px;
     }
 }
 
@@ -611,7 +686,7 @@ footer .copyright .pro-links i:hover {
         margin-top: 40px;
     }
 
-    /* about */
+    /* about page*/
 
     #about-container {
         padding: 8vw 4vw 2vw 4vw;
@@ -622,6 +697,42 @@ footer .copyright .pro-links i:hover {
     #trust .trust-img img {
         width: 50px;
         height: auto;
+    }
+
+    /* blog page */
+
+    #blog-container {
+        padding: 8vw 4vw;
+    }
+
+    /* full blogpost */
+    
+    #blog-container .blogpost img {
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 541px) {
+    #about-container {
+        flex-direction: column-reverse;
+    }
+    #about-container .about-img {
+        width: 100%;
+        padding-right: 0;
+    }
+    #about-container .about-text {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    /* blog page */
+    
+    #blog-container {
+        flex-direction: column;
+    }
+    #blog-container .blogs, #blog-container .cate {
+        width: 100%;
     }
 }
 
@@ -643,19 +754,8 @@ footer .copyright .pro-links i:hover {
         margin-top: 1rem;
     }
     
-    /* about */
+    /* about page*/
 
-    #about-container {
-        flex-direction: column-reverse;
-    }
-    #about-container .about-img {
-        width: 100%;
-        padding-right: 0;
-    }
-    #about-container .about-text {
-        width: 100%;
-        padding-bottom: 20px;
-    }
     #trust .trust-img {
         margin-top: 40px;
         display: flex;
@@ -668,11 +768,57 @@ footer .copyright .pro-links i:hover {
         margin: 10px 15px;
         height: auto;
     }
+
+    /* full blogpost */
+
+    #blog-container .blogpost {
+        margin-top: 70px;
+    }
 }
 
 @media (max-width: 376px) {
     footer .subscribe a.yellow {
         display: inline-block;
-        margin-top: 1rem;
+        margin-top: .5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    nav img {
+        width: 100px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #home {
+        padding-top: 40px;
+    }
+    #home h2 {
+        font-size: 1.8rem;
+    }
+    #home p {
+        font-size: 0.7rem;
+        line-height: 15px;
+    }
+    #home a {
+        display: inline-block;
+    }
+    #home a.blue {
+        margin: 0 0 10px 0;
+    }
+    #features .fea-base, #course .course-box {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #course .courses .details {
+        padding: 10px;
+    }
+    #course .courses .cost {
+        bottom: 80px;
+    }
+    #registration .form {
+        padding: 30px;
+    }
+    #experts {
+        padding: 8vw 4vw;
     }
 }
