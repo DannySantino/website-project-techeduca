@@ -19,47 +19,18 @@
         <div class="navigation">
             <ul>
                 <i class="fas fa-times" id="menu-close"></i>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="course.html">Courses</a></li>
+                <li><a href="course.html" class="active">Courses</a></li>
                 <li><a href="contact.html">Contacts</a></li>
             </ul>
             <img src="images/menu.png" id="menu-btn" alt="hamburger menu button">
         </div>
     </nav>
 
-    <section id="home">
-        <h2>Start Studying With Tech Educa</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, maxime! Error adipisci itaque aspernatur iure
-            magnam fugit sed tempore nemo. Vero fugiat provident commodi doloribus quae dolorem iusto similique neque!
-        </p>
-        <div class="btn">
-            <a class="blue" href="#">Learn More</a>
-            <a class="yellow" href="#">Visit Courses</a>
-        </div>
-    </section>
-
-    <section id="features">
-        <h1>Our Features</h1>
-        <p>Take a quick glance at our special features on offer</p>
-        <div class="fea-base">
-            <div class="fea-box">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Scholarship Facility</h3>
-                <p>Take advantage of any one of our various scholarship opportunities to suit your needs</p>
-            </div>
-            <div class="fea-box">
-                <i class="fas fa-file-certificate"></i>
-                <h3>Online Courses</h3>
-                <p>Take advantage of any one of our various scholarship opportunities to suit your needs</p>
-            </div>
-            <div class="fea-box">
-                <i class="fas fa-award"></i>
-                <h3>Global Certification</h3>
-                <p>Take advantage of any one of our various scholarship opportunities to suit your needs</p>
-            </div>
-        </div>
+    <section id="about-home">
+        <h2>Courses /</h2>
     </section>
 
     <section id="course">
@@ -67,7 +38,7 @@
         <p>Explore our wide variety of available courses for your edification</p>
         <div class="course-box">
 
-            <div class="courses">
+            <div class="courses" onclick="window.location.href='course-inner.html';">
                 <img src="images/c4.jpg" alt="laptop computer and a potted plant on a table">
                 <div class="details">
                     <span>Updated 09/08/21</span>
@@ -181,85 +152,60 @@
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <section id="registration">
-        <div class="reminder">
-            <p>Get 1 Course for free after you register</p>
-            <h1>Register to Get It</h1>
-            <div class="time">
-                <div class="date">
-                    16 <br> Days
+            <div class="courses">
+                <img src="images/b1.jpg" alt="computer with half of the screen showing a css stylesheet">
+                <div class="details">
+                    <span>Updated 22/06/21</span>
+                    <h6>Advanced CSS Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(501)</span>
+                    </div>
                 </div>
-                <div class="date">
-                    21 <br> Hours
-                </div>
-                <div class="date">
-                    11 <br> Mins
-                </div>
-                <div class="date">
-                    53 <br> Secs
-                </div>
-            </div>
-        </div>
-        <div class="form">
-            <h3>Create your Free Account</h3>
-            <input type="text" name="" placeholder="Name" id="">
-            <input type="text" name="" placeholder="Email" id="">
-            <input type="text" name="" placeholder="Phone Number" id="">
-            <div class="btn">
-                <a class="yellow" href="#">Submit</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="experts">
-        <h1>Community Experts</h1>
-        <p>World class tutoring from our professional instructors</p>
-        <div class="expert-box">
-
-            <div class="profile">
-                <img src="images/pro4.webp" alt="middle-aged woman with glasses on">
-                <h6>Elma Watkins</h6>
-                <p>Angular JS Expert</p>
-                <div class="pro-links">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
+                <div class="cost">
+                    $79.99
                 </div>
             </div>
 
-            <div class="profile">
-                <img src="images/pro2.webp" alt="dark-haired man with a smile on">
-                <h6>Kenan Yu</h6>
-                <p>JavaScript Instructor</p>
-                <div class="pro-links">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
+            <div class="courses">
+                <img src="images/b3.jpg" alt="macbook with colorful keyboard light effect">
+                <div class="details">
+                    <span>Updated 01/10/21</span>
+                    <h6>Linux / Ubuntu Advanced Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(125)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $54.99
                 </div>
             </div>
 
-            <div class="profile">
-                <img src="images/pro3.webp" alt="man with a beard">
-                <h6>Scott Adler</h6>
-                <p>Data Analyst</p>
-                <div class="pro-links">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
+            <div class="courses">
+                <img src="images/c7.jpeg" alt="vue.js framework logo">
+                <div class="details">
+                    <span>Updated 18/05/21</span>
+                    <h6>Full Vue.JS Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(223)</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="profile">
-                <img src="images/pro1.webp" alt="woman with a smile on">
-                <h6>Amy Summers</h6>
-                <p>Python Instructor</p>
-                <div class="pro-links">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
+                <div class="cost">
+                    $72.99
                 </div>
             </div>
 
