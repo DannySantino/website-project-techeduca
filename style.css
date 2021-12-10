@@ -842,6 +842,7 @@ footer .copyright .pro-links i:hover {
     outline: none;
     padding: 20px 30px;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #contact .form .form-col input, #contact .form .form-col textarea {
@@ -855,6 +856,7 @@ footer .copyright .pro-links i:hover {
     outline: none;
     padding: 20px 30px;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #contact .form button {
@@ -867,6 +869,7 @@ footer .copyright .pro-links i:hover {
     font-weight: 600;
     cursor: pointer;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 #map {
