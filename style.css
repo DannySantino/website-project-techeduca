@@ -955,12 +955,14 @@ footer .copyright .pro-links i:hover {
     #home p {
         width: 90%;
     }
-    #features, #course {
+    #features {
         padding: 8vw 4vw 0 4vw;
     }
+    #course {
+        padding: 8vw 4vw;
+    }
     #registration {
-        margin-top: 8vw;
-        padding: 6vw 4vw 6vw 4vw;
+        padding: 6vw 4vw;
     }
     #registration .reminder .time {
         display: flex;
